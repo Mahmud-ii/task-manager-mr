@@ -8,11 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      // backgroundImage: {
+      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      //   "gradient-conic":
+      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      // },
+      colors: {
+        bgGray: "#EEEDED",
+        bgDarkGray: "#EDEDED",
+        btnYellow: "#FED443",
+        tagLightBlue: "#CFDBDC",
       },
+    },
+    screens: {
+      md: { max: "867px" },
+      // => @media (max-width: 767px) { ... }
+
+      sm: { max: "539px" },
+      // => @media (max-width: 639px) { ... }
     },
   },
   plugins: [],
